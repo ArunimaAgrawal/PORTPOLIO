@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <div id="name-container">
+            <h1>Arunima Agrawal</h1>
+        </div>
+
+        <nav>
+            <a onclick="smoothScroll('#home')">Home</a>
+            <a onclick="smoothScroll('#about-me')">About Me</a>
+            <a onclick="smoothScroll('#skills')">Skills</a>
+            <a onclick="smoothScroll('#experience')">Experience</a>
+            <a onclick="smoothScroll('#projects')">Projects</a>
+        </nav>
+    </header>
+
+    <div id="home" class="section">
+        <h2>WELCOME to my website, this will helps you know more about me and my journey till date.</h2>
+        <p>Feel free to explore and learn more about my skills and projects!</p>
+        <div id="portfolio-section">
+            <div id="intro-text">
+                <h2>Hello, I am a</h2>
+            </div>
+            <p id="typing-effect" class="txt-rotate" data-period="2000"
+                data-rotate='[ "nerdy.", "simple.", "developer.", "witty.", "fun!" ]'></p>
+			
+        </div>
+	
+		<button id="resume-button" onclick="downloadResume()">Download Resume</button>
+    </div>
+	<div id="about-me" class="section">
+    <div class="about-me-content">
+        <div class="about-me-image">
+            <img src="image2.jpg" alt="Your Image">
+        </div>
+        <div class="about-me-info">
+            <h1>About Me</h1>
+            <p>I am Arunima Agrawal of IV year from Institute of Engineering and Technology DAVV, Indore. I have worked on Web Development
+                using HTML, CSS, Bootstrap and Javascript and made 3 projects while learning the languages which are described in detail below.
+            </p>
+            <p> I am explorer who loves to learn new things daily and being an extrovert helps in building connection with people and
+                explore new things. I love to explore different fields and learn from each and every situtation. I am optimistic person 
+                who believes in loyality and humanity which makes me a person to adapate in different environment easily.                
+            </p>
+        </div>
+    </div>
+</div>
+
+
+     <div id="skills" class="section">
+        <p><h2>My skills:</h2></p>
+        <div class="skill-buttons">
+            <button class="skill-button" onclick="toggleSkillDetails('web-dev')"><i class="fas fa-bug"></i> Web Development(Frontend)</button>
+    <button class="skill-button" onclick="toggleSkillDetails('android-dev')"><i class="fas fa-code"></i> OOPS & DSA(C++)</button>
+    <button class="skill-button" onclick="toggleSkillDetails('ai')"><i class="fas fa-brain"></i> Computer Network and DBMS</button>
+            <!-- Add more skills as needed -->
+        </div>
+        <!-- Skill Details -->
+<div id="web-dev-details" class="skill-details">
+        
+        <p>I learned Web Development from various platforms and practised a lot. Internshala, Udemy, 
+            <br>Youtube, Google. This helped me gain a varierty of codes and tags without any much difficulty. </p>
+        <p>I have created three major and minor projects using frontend Development  
+            <br> which includes Calculator, Weather website and the Portfolio website.</p>
+	<img src="webD1.avif" alt="Web Development Image" style="width: 400px;  margin: 0 auto;">
+	<img src="webD2.jpg" alt="Web Development Image" style="width: 400px; height: 268px; margin: 0 auto;">
+    </div>
+    <div id="android-dev-details" class="skill-details">
+        
+        <p>I have learned OOPS in I year of college and made topics strong while 
+            <br> attending classes and gained a lot of Knowledge on it. And I have also  
+            <br> practised it in different platforms like "HackerRank" and "Coding Studio".
+        </p>
+        <p>DSA includes a variety of topics and I have been practising it since a 
+            <br> while and working upon my critical thinking and logic building skills.
+            <br> While learning daily I have practised 150+ questions on various platforms.
+        </p>
+		<img src="coding.png" alt="Web Development Image" style="width: 200px;">
+		<img src="coding2.jpg" alt="Web Development Image" style="width: 400px; height: 200px;">
+    </div>
+    <div id="ai-details" class="skill-details">
+        
+        <p>Computer Networks, Network and Information Security and other technical subjects which were introduced
+          <br> to us in 3 years of college studies where we learned a lot of content and understood them very well.
+        </p>
+        <p>Database Management System, SQL, Data analytics, Tableau like subjects and topics were also 
+            <br> included in our syllabus during the semester and have learned about subjects throughly.
+        </p>
+		<img src="CN.jpg" alt="Web Development Image" style="width: 250px; height: 200px;">
+        <img src="dbms.png" alt="Web Development Image" style="width: 400px; height: 200px;">
+		<img src="NetworkSecurity.webp" alt="Web Development Image" style="width: 300px;">
+    </div>
+        <div>
+            <p>These are the technical skills and used different tools, languages and frameworks  and I faced
+                <br> multiple challenges and errors during developing skills and the projects I made might
+                <br> be simple and common but I added different styling to make it different from others</p>
+            <p>Some of the soft skills include adapatibility, logic building, critical thinking extrovert person, teamwork,
+        <br>   time management and active listening. I have worked really well on my skills in the college and in Indore.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div id="experience" class="section project-section">
+    <p><h2>My Experience:</h2></p>
+    <div class="experience-buttons">
+        <button class="experience-button" onclick="toggleProjectDetails('Velankani')"><i class="fa fa-briefcase"></i> Velankani Group</button>        
+    </div>
+    
+   
+    <div id="experience-details" class="expereince-details">
+        <h3>Velankani Electronics Pvt Ltd</h3>
+        <p>Worked on NodeRED for the beer factory project. I created a project where working of different 
+          <br>  machines are tested and values are checked before actually implementing on the factory</p>
+        <p>Dealing with language barrier, quick learning and adapting the environment were some of the things  
+           <br> I learned in the company and learned a lot of new things from seniors and manager of my team.
+            </p>
+        <img class="project-img" src="Velankani.jpg" alt="Weather App Screenshot" style="height: 200px; width: 300px;">
+        <img class="project-img" src="weather2.png" alt="Weather App Screenshot" style="height: 200px; width: 300px;">
+		 <!-- <div class="tech-stack">
+        <h4>Tech Stack:</h4>
+         <ul>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+        </ul> 
+    </div> -->
+        <p>Project Link: <a href="https://drive.google.com/file/d/1oz4Y4AT6nIs0CDkCLo196mCsjTw61cM7/view?usp=sharing" target="_blank" class="project-link">Velankani Group</a></p>
+    </div>
+</div>
+
+
+   <div id="projects" class="section project-section">
+    <p><h2>My Projects:</h2></p>
+    <div class="project-buttons">
+        <button class="project-button" onclick="toggleProjectDetails('weather-app')"><i class="fas fa-cloud"></i> Weather App</button>
+        <button class="project-button" onclick="toggleProjectDetails('calculator')"><i class="fas fa-calculator"></i> Calculator</button>
+        <!-- Add more project buttons as needed -->
+    </div>
+    
+    <!-- Project Details -->
+    <div id="weather-app-details" class="project-details">
+        <h3>Weather App</h3>
+        <p>A simple weather application built using HTML, CSS, and JavaScript.</p>
+        <p>It shows temperature, humidity, speed of wind and local time of the 
+            <br>city or country. To make it different from others, styling is made when
+            <br> local time changes its background will also change.</p>
+        <img class="project-img" src="weather.png" alt="Weather App Screenshot" style="height: 200px; width: 300px;">
+        <img class="project-img" src="weather2.png" alt="Weather App Screenshot" style="height: 200px; width: 300px;">
+		<div class="tech-stack">
+        <h4>Tech Stack:</h4>
+        <ul>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+        </ul>
+    </div>
+        <p>Project Link: <a href="https://www.msn.com/en-us/weather/forecast/in-Indore,MP?loc=eyJsIjoiSW5kb3JlIiwiciI6Ik1QIiwicjIiOiJJbmRvcmUiLCJjIjoiSW5kaWEiLCJpIjoiSU4iLCJnIjoiZW4tdXMiLCJ4IjoiNzUuODgyIiwieSI6IjIyLjcwOCJ9&ocid=ansmsnweather&weadegreetype=F" target="_blank" class="project-link">Weather App</a></p>
+    </div>
+    <div id="calculator-details" class="project-details">
+        <h3>Calculator</h3>
+        <p>A basic calculator implemented with HTML and CSS.</p>
+        <img class="project-img" src="calculator1.png" alt="Calculator Screenshot">
+        <img class="project-img" src="calculator2.png" alt="Calculator Screenshot" style="height: 322px;">
+    </div>
+</div>
+
+
+	 <button id="go-to-top" onclick="smoothScroll('#home')">Go to Top</button>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
